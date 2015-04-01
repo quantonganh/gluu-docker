@@ -3,7 +3,7 @@ FROM ubuntu:14.04
 RUN apt-get update
 RUN apt-get install -y libssl-dev python-dev python-pip swig jq curl git-core \
     gcc make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libssl-dev \
-    supervisor
+    libffi-dev supervisor
 RUN apt-get build-dep -y openssl
 
 RUN echo deb http://ppa.launchpad.net/saltstack/salt/ubuntu \
